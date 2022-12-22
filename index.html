@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <div id="search-row">
+          <form action="/action_page.php" id="search-form">
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Type in city..."
+            />
+            <input
+              id="search-btn"
+              class="btn-one"
+              type="submit"
+              value="Search"
+            />
+            <input id="current" class="btn-two" type="submit" value="Current" />
+          </form>
+        </div>
+        <h1>London, England</h1>
+        <ul id="list-1">
+          <li class="card-text" id="date"></li>
+          <li id="info" class="card-text">Partly Cloudy</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <span class="temperature" id="temperature"></span
+            ><span class="units"><a href="#" id="celcius">ºC</a></span>
+          </div>
+          <div class="col-6">
+            <ul id="list-2">
+              <li class="card-text">
+                Humidity: <span id="humidity">35</span>%
+              </li>
+              <li class="card-text">Wind: <span id="wind">10</span>mph</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
