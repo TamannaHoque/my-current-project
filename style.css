@@ -94,3 +94,8 @@ h1 {
   text-decoration: none;
   color: black;
 }
+
+#github {
+  text-align: center;
+  margin-top: 10px;
+}
